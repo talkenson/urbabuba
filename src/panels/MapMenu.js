@@ -20,25 +20,10 @@ const MainBlock = ({ id, go, getQR, fetchedUser, pageName, goOn }) => (
 
   <Div>
     <Button size="xl" level="1" before={<Icon24Qr/>} onClick={getQR}>Сканировать метку</Button>
-    <ListItem style={{ display: 'flex', alignItems: 'center', flexDirection: 'column'}}>
-		Using backend on {Store.get('AxHost')}
-		</ListItem>
-    <ListItem style={{ display: 'flex', alignItems: 'center', flexDirection: 'column'}}>
 
-{Store.get('User').points} {Store.get('User').role}
-		</ListItem>
-    <ListItem style={{ display: 'flex', alignItems: 'center', flexDirection: 'column'}}>
-    {JSON.stringify(Store.get('fetchedUser'))}
-    </ListItem>
-    <ListItem style={{ display: 'flex', alignItems: 'center', flexDirection: 'column'}}>
-    {JSON.stringify(fetchedUser)}
-    </ListItem>
-    <ListItem style={{ display: 'flex', alignItems: 'center', flexDirection: 'column'}}>
-    {JSON.stringify(Store.get('User'))}
-    </ListItem>
-    <ListItem style={{ display: 'flex', alignItems: 'center', flexDirection: 'column'}}>
-    {JSON.stringify(Store.get('axios'))}
-        </ListItem>
+
+
+
 
   </Div>
 

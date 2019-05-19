@@ -88,7 +88,7 @@ class App extends React.Component {
 
 	workNewQR(e){
 		//console.log(e.qr_data);
-
+		
 		this.goOn('newplace');
 	}
 	goOn(e){
